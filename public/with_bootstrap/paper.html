@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>We played paper!</title>
 
@@ -8,45 +9,67 @@
 
   <!-- Connect Font Awesome CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css">
+  <link rel="stylesheet" href="assets/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <style>
+    body{
+      font-family: 'Cabin Sketch', cursive;
+    }
+  </style>
 </head>
 
 <body>
-  <a href="rock.html">
-    <i class="far fa-hand-rock fa-fw"></i>
+  <div class="container mt-5">
+    <div class="row mb-3">
+      <div class="col-4">
+        <a href="rock.html" class="btn btn-outline-info btn-block">
+          <i class="far fa-hand-rock fa-fw"></i>
+          Play Rock
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="paper.html" class="btn btn-info btn-block">
+          <i class="far fa-hand-paper fa-fw"></i>
+          Play Paper
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="scissors.html" class="btn btn-outline-info btn-block">
+          <i class="far fa-hand-scissors fa-fw"></i>
+          Play Scissors
+        </a>
+      </div>
+    </div>
+    <div class="row mb-3">
+     <div class="col-md-6">
+        <div class="card border-success mb-3 text-center">
+          <div class="card-body text-success">
+            <h5 class="card-title">We played paper!</h5>
+            <p class="card-text"><i class="far fa-hand-paper fa-10x"></i></p>
+          </div>
+        </div>
+      </div>
+     <div class="col-md-6">
+        <div class="card border-danger mb-3 text-center">
+          <div class="card-body text-danger">
+            <h5 class="card-title">They played paper!</h5>
+            <p class="card-text"><i class="far fa-hand-paper fa-10x"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12">
+        <div class="alert alert-warning" role="alert">
+          <h2 class="display-3 text-center">We Tied!</h2>
+        </div>
+      </div>
+    </div>
 
-    Play Rock
-  </a>
-
-  <a href="paper.html">
-    <i class="far fa-hand-paper fa-fw"></i>
-
-    Play Paper
-  </a>
-
-  <a href="scissors.html">
-    <i class="far fa-hand-scissors fa-fw"></i>
-
-    Play Scissors
-  </a>
-
-  <h2>We played paper!</h2>
-
-  <p>
-    <i class="far fa-hand-paper fa-10x"></i>
-  </p>
-
-  <h2>They played paper!</h2>
-
-  <p>
-    <i class="far fa-hand-paper fa-10x"></i>
-  </p>
-
-  <h2>
-    We tied!
-  </h2>
-
-  <a href="index.html">
-    Rules
-  </a>
+    <a href="index.html">
+      Rules
+    </a>
+  </div>
 </body>
+
 </html>
